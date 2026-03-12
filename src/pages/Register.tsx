@@ -103,24 +103,24 @@ export function Register() {
                 required
                 value={selectedClassId}
                 onChange={(e) => setSelectedClassId(e.target.value)}
-                className="w-full bg-white/10 border border-white/20 rounded-2xl py-4 pl-12 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all appearance-none cursor-pointer text-white"
+                className="w-full bg-white/10 border border-white/20 rounded-2xl py-4 pl-12 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all appearance-none cursor-pointer text-white text-sm"
               >
                 <option value="" disabled className="bg-[#001f4d]">Sélectionne ta classe</option>
-                <optgroup label="Enseignement Général (6ème à Terminale)" className="bg-[#001f4d] font-bold text-blue-300">
+                <optgroup label="ENSEIGNEMENT GÉNÉRAL" className="bg-[#001f4d] font-bold text-blue-300">
                   {classes.filter(c => c.group === "Général").map((cls) => (
                     <option key={cls.id} value={cls.id} className="bg-[#001f4d] font-normal text-white">
                       {cls.name}
                     </option>
                   ))}
                 </optgroup>
-                <optgroup label="Technique Industriel (F, E, H)" className="bg-[#001f4d] font-bold text-emerald-400">
+                <optgroup label="TECHNIQUE INDUSTRIEL (E, F, H)" className="bg-[#001f4d] font-bold text-emerald-400">
                   {classes.filter(c => c.group === "Technique Industriel").map((cls) => (
                     <option key={cls.id} value={cls.id} className="bg-[#001f4d] font-normal text-white">
                       {cls.name}
                     </option>
                   ))}
                 </optgroup>
-                <optgroup label="Technique Commercial (G)" className="bg-[#001f4d] font-bold text-amber-400">
+                <optgroup label="TECHNIQUE COMMERCIAL (G, BG)" className="bg-[#001f4d] font-bold text-amber-400">
                   {classes.filter(c => c.group === "Technique Commercial").map((cls) => (
                     <option key={cls.id} value={cls.id} className="bg-[#001f4d] font-normal text-white">
                       {cls.name}
