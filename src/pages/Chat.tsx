@@ -161,7 +161,7 @@ export function Chat() {
       setIsLoading(true);
 
     try {
-      const apiKey = (import.meta as any).env?.GEMINI_API_KEY || (process as any).env?.GEMINI_API_KEY;
+      const apiKey = (import.meta as any).env.VITE_GEMINI_API_KEY;
       
       if (!apiKey || apiKey === "MY_GEMINI_API_KEY") {
         setErrorMessage("Clé API Gemini introuvable. Veuillez configurer GEMINI_API_KEY.");
