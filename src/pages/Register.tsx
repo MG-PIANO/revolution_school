@@ -38,7 +38,6 @@ export function Register() {
   };
 
   return (
-
     <div className="flex-1 text-white flex flex-col items-center justify-center p-6 bg-gradient-to-b from-[#001f4d] to-[#000a1f]">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
