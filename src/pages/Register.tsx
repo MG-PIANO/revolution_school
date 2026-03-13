@@ -38,9 +38,9 @@ export function Register() {
   };
 
   return (
-  return (
+
     <div className="flex-1 text-white flex flex-col items-center justify-center p-6 bg-gradient-to-b from-[#001f4d] to-[#000a1f]">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="w-full max-w-md"
@@ -56,7 +56,7 @@ export function Register() {
         <form onSubmit={handleRegister} className="space-y-6">
           {/* Avatar Upload */}
           <div className="flex flex-col items-center mb-6">
-            <div 
+            <div
               onClick={() => fileInputRef.current?.click()}
               className="relative w-24 h-24 rounded-full bg-white/10 border-2 border-dashed border-blue-400/50 flex items-center justify-center cursor-pointer overflow-hidden group hover:border-blue-400 transition-all"
             >
@@ -72,12 +72,12 @@ export function Register() {
                 <Camera className="w-6 h-6 text-white" />
               </div>
             </div>
-            <input 
-              type="file" 
-              ref={fileInputRef} 
-              onChange={handleAvatarChange} 
-              accept="image/*" 
-              className="hidden" 
+            <input
+              type="file"
+              ref={fileInputRef}
+              onChange={handleAvatarChange}
+              accept="image/*"
+              className="hidden"
             />
             <p className="text-xs text-blue-300 mt-2">Clique pour ajouter ta photo</p>
           </div>
